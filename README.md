@@ -43,48 +43,47 @@ content
 
 ``````
 
+## Tutorials
+To familiarize yourself with using the toolkit, from setting up your account to creating folders/files, pages, subtopics, reviewing changes, and publishing them to the live toolkit website, check out the [Tutorials section](./Tutorials/index.md) for a step-by-step guide.
 
-### Customizing the Contributors Page
+Ready to dive in? Click on the tutorial that interests you and start enhancing your toolkit experience!
+
+#### How to Create a GitHub Account
+
+Follow these [steps to create a GitHub account](./Tutorials/create-github-account.md) and join the toolkit community.
+
+#### Create a Toolkit Repository
+
+Learn [how to set up your own toolkit repository](./Tutorials/create-a-toolkit.md) on GitHub for seamless collaboration.
+
+#### How to Create a Branch on GitHub
+
+Explore the process of [creating branches on GitHub](./Tutorials/create-branch.md) to manage and isolate your toolkit development.
+
+#### How to Create a Folder or File on GitHub
+
+Detailed instructions on [creating folders, files, pages, topics and sub-topics](./Tutorials/create-file.md) within your toolkit repository for organized content.
+
+#### Manage merge request
+
+Guidance on [how to merge your changes to main branch](./Tutorials/merge-request.md) for a clear and effective team review and publish.
+
+
+#### Write Your Content
+
+Guidance on [crafting and structuring your toolkit content](./Tutorials/write-content.md) for a clear and effective presentation.
+
+#### Publish Your Changes to Live Website
+
+Understand the steps to [publish your changes](./Tutorials/publish.md), making them live on the toolkit website for the world to see.
+
+#### Customizing the Contributors Page
 
 The current version of this template incorporates both a contributor profile page and a contributors list page. If you wish to integrate these pages into your website, you must update the `_data/contributors.yml` file with a list of your project's contributors.
 
 To access an individual contributor's profile page, you can link to the respective profile using the ID from your `_data/contributors.yml` file. For example: `[Jane Doe]({{ site.baseurl }}/contributors/Jane-doe.html)` directs to Jane Doe's profile based on the YAML file.
 
 If you decide not to display the contributors page in your side menu, you can exclude it by adding `Team.md` to the `excludes` list in your `_config.yml` file.
-
-## Tutorials
-To familiarize yourself with using the toolkit, from setting up your account to creating folders/files, pages, subtopics, reviewing changes, and publishing them to the live toolkit website, check out the [Tutorials section](./Tutorials/index.md) for a step-by-step guide.
-
-Ready to dive in? Click on the tutorial that interests you and start enhancing your toolkit experience!
-
-### How to Create a GitHub Account
-
-Follow these [steps to create a GitHub account](./Tutorials/create-github-account.md) and join the toolkit community.
-
-### Create a Toolkit Repository
-
-Learn [how to set up your own toolkit repository](./Tutorials/create-a-toolkit.md) on GitHub for seamless collaboration.
-
-### How to Create a Branch on GitHub
-
-Explore the process of [creating branches on GitHub](./Tutorials/create-branch.md) to manage and isolate your toolkit development.
-
-### How to Create a Folder or File on GitHub
-
-Detailed instructions on [creating folders, files, pages, topics and sub-topics](./Tutorials/create-file.md) within your toolkit repository for organized content.
-
-### Manage merge request
-
-Guidance on [how to merge your changes to main branch](./Tutorials/merge-request.md) for a clear and effective team review and publish.
-
-
-### Write Your Content
-
-Guidance on [crafting and structuring your toolkit content](./Tutorials/write-content.md) for a clear and effective presentation.
-
-### Publish Your Changes to Live Website
-
-Understand the steps to [publish your changes](./Tutorials/publish.md), making them live on the toolkit website for the world to see.
 
 
 ## Customizing Configuration
