@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en-US" }}">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ site.baseurl }}/public/imgs/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ site.baseurl }}/public/imgs/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ site.baseurl }}/public/imgs/favicon-16x16.png">
+    <link rel="icon" type="image/x-icon" href="{{ site.baseurl }}/public/imgs/favicon.ico">
+
+    <link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@undp/design-system/docs/css/base-minimal.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@undp/design-system/docs/css/components/author-card.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@undp/design-system/docs/css/components/author-column.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@undp/design-system/docs/css/components/cta-link.min.css">
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@undp/design-system/docs/css/components/global-header.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@undp/design-system/docs/css/components/language-switcher.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@undp/design-system/docs/css/components/menu.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@undp/design-system/docs/css/components/mega-menu.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@undp/design-system/docs/css/components/mobile-nav.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@undp/design-system/docs/css/components/breadcrumbs.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@undp/design-system/docs/css/templates/authors.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@undp/design-system/docs/css/components/author-summary.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@undp/design-system/docs/css/components/content-card.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@undp/design-system/docs/css/components/chips.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@undp/design-system/docs/css/components/input-fields.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@undp/design-system/docs/css/components/buttons.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@undp/design-system/docs/css/components/newsletter-signup.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@undp/design-system/docs/css/components/accordion.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@undp/design-system/docs/css/components/footer.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@undp/design-system/docs/css/templates/author-page.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@undp/design-system/docs/css/components/menu-overflow.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@undp/design-system/docs/css/components/sidebar.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@undp/design-system/docs/css/components/sidebar-data.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@undp/design-system/docs/css/components/page-hero.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@undp/design-system/docs/css/components/progress.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@undp/design-system/docs/css/components/swiper.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@undp/design-system/docs/css/components/fluid-image-size-carousel.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@undp/design-system/docs/css/templates/generic-page.min.css">
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+  />
+  
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <title>{{ site.data.site_info.title }}</title>
+
+    <!-- OGP tags -->
+    <meta property="og:title" content="{{ site.data.site_info.title }}">
+    <meta property="og:description" content="{{ site.data.site_info.description }}">
+    
+    <meta property="og:image" content="{{ site.baseurl }}/public/imgs/UNDP_accelerator_labs_logo_vertical_color_RGB.png" />
+    <meta property="og:image:secure_url" content="{{ site.baseurl }}/public/imgs/UNDP_accelerator_labs_logo_vertical_color_RGB.png" />
+    <meta property="og:image:width" content="400" />
+    <meta property="og:image:alt" content="UNDP Accelerator Labs Logo" />
+  </head>
+  <body>
+ 
+    <div class="generic-page">
+        <header class="global-header global-load-animation">
+          <section class="header">
+            <div class="grid-container fluid">
+              <div class="grid-x grid-margin-x align-content-middle">
+                <div class="cell large-6 small-2 align-self-middle top-left">
+                    <p class="site-title" style="margin-right: 2em;">{{ site.data.site_info.title }}</p>
+                  <button class="menu-icon menu-hamburger" aria-label="menu-icon">
+                    <span class="hamburger-line line-top"></span>
+                    <span class="hamburger-line line-middle"></span>
+                    <span class="hamburger-line line-bottom"></span>
+                    Nav toggle
+                  </button>
+                </div>
+                <div class="cell large-4 small-8 mid-nav">
+                  <nav class="menu" role="navigation" aria-label="navigation">
+                    <ul>
+                      <li data-menu-id="headerlink1">
+                        <a href="#" tabindex="0"><p></p> </a>
+                      </li>
+                    </ul>
+                    <a href="{{ site.baseurl }}/ class="logo">
+                      <img
+                        src="{{ site.baseurl }}/public/imgs/UNDP_accelerator_labs_logo_vertical_color_RGB.png"
+                        style="max-width: 30%; height: auto;"
+                        alt="UNDP Logo"
+                      />
+                    </a>
+                    <ul>
+                      <li data-menu-id="headerlink4">
+                        <a href="#" tabindex="0">Get Involved</a>
+                      </li>
+                    </ul>
+                  </nav>
+                </div>
+                <div class="cell large-2 small-2 top-right">
+                <button id="google_translate_element" ></button>
+                  <button class="icon-search">Search</button>
+                </div>
+                <div class="mobile-nav">
+                  <div class="grid-x">
+                    <div class="cell mobile-links">
+                      <ul>
+                        <li>
+                          <a class="cta__link cta--space" href="#" id="headerlink4">
+                            Get Involved
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <div class="mega-wrapper"></div>
+        </header>
+        <div class="grid-x">
+          <div class="cell small-12 sidebar-width">
+            <div class="column sidebar-mobile">
+              <nav role="navigation" aria-label="Sidebar" class="sidebar-accordion">
+                <div class="grid-x">
+                  <div class="cell undefined">
+                    <h6 class="" tabindex="0" data-viewport="false">Menu</h6>
+                    <ul>
+                      <li aria-label="Sidebar heading" class="active">
+                        <a href="#">PAGE TITLE</a>
+                        <button
+                          tabindex="0"
+                          aria-expanded="false"
+                          aria-label="button"
+                        ></button>
+                        <ul class="accordion__panel">
+                          <li><a href="#">Subpage title</a></li>
+                          <li>
+                            <a href="#">
+                              Subpage with an exceptionally long title on two lines
+                            </a>
+                          </li>
+                          <li><a href="#">Subpage title</a></li>
+                        </ul>
+                      </li>
+                      <li aria-label="Sidebar heading"><a href="#">PAGE TITLE</a></li>
+                      <li aria-label="Sidebar heading">
+                        <a href="#">PAGE TITLE</a>
+                        <button
+                          tabindex="0"
+                          aria-expanded="false"
+                          aria-label="button"
+                        ></button>
+                        <ul class="accordion__panel">
+                          <li><a href="#">Subpage title</a></li>
+                          <li>
+                            <a href="#">
+                              Subpage with an exceptionally long title on two lines
+                            </a>
+                          </li>
+                          <li><a href="#">Subpage title</a></li>
+                        </ul>
+                      </li>
+                      <li aria-label="Sidebar heading"><a href="#">PAGE TITLE</a></li>
+                      <li aria-label="Sidebar heading"><a href="#">PAGE TITLE</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
+            </div>
+          </div>
+        </div>
+
+        <!-- START CONTENT -->
+        <div class="grid-container fluid content-bottom">
+          <div class="grid-x margin-top-72">
+            <div class="cell large-3 small-12 sidebar-width">
+              <div class="column sidebar-desktop">
+                <nav role="navigation" aria-label="Sidebar" class="sidebar-accordion">
+                  <div class="grid-x">
+
+                    <!-- START SIDEBAR FOR DESKTOP -->
+                    <div class="cell medium-12">
+                      <h6 class="" tabindex="0" data-viewport="false">Menu</h6>
+                      <ul>
+                        <li aria-label="Sidebar heading" class="active">
+                          <a href="#">PAGE TITLE</a>
+                          <button
+                            tabindex="0"
+                            aria-expanded="false"
+                            aria-label="button"
+                          ></button>
+                          <ul class="accordion__panel">
+                            <li><a href="#">Subpage title</a></li>
+                            <li>
+                              <a href="#">
+                                Subpage with an exceptionally long title on two lines
+                              </a>
+                            </li>
+                            <li><a href="#">Subpage title</a></li>
+                          </ul>
+                        </li>
+                        <li aria-label="Sidebar heading">
+                          <a href="#">PAGE TITLE</a>
+                        </li>
+                        <li aria-label="Sidebar heading">
+                          <a href="#">PAGE TITLE</a>
+                          <button
+                            tabindex="0"
+                            aria-expanded="false"
+                            aria-label="button"
+                          ></button>
+                          <ul class="accordion__panel">
+                            <li><a href="#">Subpage title</a></li>
+                            <li>
+                              <a href="#">
+                                Subpage with an exceptionally long title on two lines
+                              </a>
+                            </li>
+                            <li><a href="#">Subpage title</a></li>
+                          </ul>
+                        </li>
+                        <li aria-label="Sidebar heading">
+                          <a href="#">PAGE TITLE</a>
+                        </li>
+                        <li aria-label="Sidebar heading">
+                          <a href="#">PAGE TITLE</a>
+                        </li>
+                      </ul>
+                    </div>
+                    <!-- END SIDEBAR FOR DESKTOP -->
+
+                  </div>
+                </nav>
+              </div>
+            </div>
+
+            <!-- BEGIN PAGE CONTENT -->
+            <div class="cell large-9 small-12 generic-content">
+              <div class="grid-x">
+                <div class="markdown-body">
+                    {{ content }}
+                </div>
+              </div>
+            </div>
+            <!-- END PAGE CONTENT -->
+
+          </div>
+        </div>
+
+        <!-- BEGIN PAGE FOOTER -->
+        {% include corporate/footer.html %}
+      </div>      
+
+
+
+
+    <script type="text/javascript">
+      function googleTranslateElementInit() {
+        new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+      }
+    </script>
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.3/gsap.min.js"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.0/anchor.min.js" integrity="sha256-lZaRhKri35AyJSypXXs4o6OPFTbTmUoltBbDCbdzegg=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@undp/design-system/docs/js/animation.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@undp/design-system/docs/js/navigation.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@undp/design-system/docs/js/undp.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@undp/design-system/docs/js/accordion.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@undp/design-system/docs/js/viewport.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@undp/design-system/docs/js/sidebar.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@undp/design-system/docs/js/lang-switcher.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@undp/design-system/docs/js/scrolling-progressbar.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@undp/design-system/docs/js/swiper.min.js"></script>
+
+    
+
+    <script>
+    anchors.add();
+    $(document).ready(function(){
+      navigationInitialize();
+      navigationOverFlow();
+      accordion();
+      sidebarNav();
+      sidebarMenu();
+
+      langSwitch();
+
+      accordion('[data-accordion="mobile"]', '.footer-panel', 'active');
+      expandToSize('.pagehero-full');
+      swiper('.fluid-carousel', '.slide-content'); 
+    });
+    </script>
+  </body>
+</html>
