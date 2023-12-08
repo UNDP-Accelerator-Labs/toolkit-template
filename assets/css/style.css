@@ -1,6 +1,6 @@
 /*! normalize.css v4.1.1 | MIT License | github.com/necolas/normalize.css */
-html {
-  font-family: "Noto Sans", sans-serif;
+* {
+  font-family: "Noto Sans", sans-serif !important;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 }
