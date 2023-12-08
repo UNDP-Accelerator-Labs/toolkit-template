@@ -168,8 +168,11 @@ header {
   color: #fff;
 }
 
+.markdown-body, body, h1, h2, h3, h4, h5, h6, h7, p, ul, ol, l1, a, span {
+  font-family: "Noto Sans", sans-serif !important;
+}
+
 .markdown-body {
-  font-family: "Noto Sans", sans-serif;
   font-size: 16px;
   line-height: 1.5;
   word-wrap: break-word;
