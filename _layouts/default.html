@@ -39,6 +39,7 @@
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@undp/design-system/docs/css/components/swiper.min.css">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@undp/design-system/docs/css/components/fluid-image-size-carousel.min.css">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@undp/design-system/docs/css/templates/generic-page.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@undp/design-system/docs/css/components/search-expand.min.css">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@undp/design-system/docs/css/components/country-site-header.min.css">
     <link
     rel="stylesheet"
@@ -49,7 +50,7 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
-
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
 
     <title>{{ site.data.site_info.title }}</title>
@@ -86,20 +87,27 @@
                   <span><a href="#" title="UNDP homepage link">{{ site.data.site_info.title }}</a></span>
                 </div>
               </div>
-              <div class="cell small-1 large-2 align-content-middle top-center">
+              <div class="cell small-1 large-6 align-content-middle top-center">
                 <nav class="menu">
                   <ul class="">
-                    <li class="has-submenu">
+                    <li data-menu-id="headerlink1">
                       <a href="{{ site.data.site_info.github_url }}" target="_blank" class="" tabindex="0" aria-expanded="true">
                         Get Involved
                       </a>
+                    </li>
+                    <li data-menu-id="headerlink2">
+                    <div class="expand-search align-content-middle top-center">
+                      <button class="expand-button">
+                        <span class="icon-search"></span>
+                      </button>
+                      <input type="text" aria-label="expand-search" />
+                    </div>
                     </li>
                   </ul>
                 </nav>
               </div>
               <div class="cell small-3 large-2 top-right">
-                <button id="google_translate_element" style="border: 0;" ></button>
-                <button class="icon-search">Search</button>
+                <button id="google_translate_element" style="border: 0;" ></button>          
               </div>
             </div>
           </div>
@@ -236,6 +244,7 @@
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@undp/design-system/docs/js/lang-switcher.min.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@undp/design-system/docs/js/scrolling-progressbar.min.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@undp/design-system/docs/js/swiper.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@undp/design-system/docs/js/expand-search.min.js"></script>
 
     <script>
     $(document).ready(function(){
@@ -252,6 +261,8 @@
       accordion('[data-accordion="mobile"]', '.footer-panel', 'active');
       expandToSize('.pagehero-full');
       swiper('.fluid-carousel', '.slide-content'); 
+
+      expandSearch()
     });
 
     $(document).ready(function() {
