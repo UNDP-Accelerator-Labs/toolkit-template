@@ -2,3 +2,7 @@ exclude:
   - README.md
   - Tutorials/
 baseurl: "/toolkit-micro-site-template"
+plugins:
+    - jekyll-seo-tag
+
+    
