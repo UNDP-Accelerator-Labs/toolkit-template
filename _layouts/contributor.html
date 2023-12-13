@@ -43,7 +43,7 @@ layout: default
       <div class="author-summary-left">
         <div class="cta__link cta--space">
           <span style="padding-right: 0.4em"
-            ><a href="mailto:{{ page.contributor.email }}">Contact </a></span
+            ><a href="mailto:{{ page.contributor.email | encode_email }}">Contact </a></span
           >
           <span style="padding-right: 0.4em"
             ><a target="_blank" href="{{ page.contributor.twitter }}"

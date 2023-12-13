@@ -35,7 +35,7 @@
 
     <div class="cta__link cta--space">
       <span style="padding-right: 0.4em"
-        ><a href="mailto:{{ contributor.email }}">Contact </a></span
+        ><a href="mailto:{{ contributor.email | encode_email }}">Contact </a></span
       >
       <span style="padding-right: 0.4em"
         ><a target="_blank" href="{{ contributor.twitter }}"

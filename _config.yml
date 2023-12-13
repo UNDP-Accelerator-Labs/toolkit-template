@@ -1,6 +1,9 @@
 baseurl: "/toolkit-micro-site-template"
 plugins:
     - jekyll-seo-tag
+gems:
+- jekyll-email-protect
+
 exclude:
   - README.md
   - Tutorials/

@@ -41,6 +41,11 @@
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@undp/design-system/docs/css/templates/generic-page.min.css">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@undp/design-system/docs/css/components/search-expand.min.css">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@undp/design-system/docs/css/components/country-site-header.min.css">
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@undp/design-system/docs/css/components/filter-and-search-bar.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@undp/design-system/docs/css/components/multi-select.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@undp/design-system/docs/css/components/checkbox.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@undp/design-system/docs/css/components/radio.min.css">
     <link
     rel="stylesheet"
     href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
@@ -201,6 +206,56 @@
                     </div>
                   </div>
                 </nav>
+
+                <!-- BEGGIN FILTERS -->
+                <div class="search-filter">
+                  <div class="select-wrapper">
+                    <div class="multi-select" data-multi-select="">
+                      <button aria-label="Region" aria-expanded="false" data-id="filter1">
+                        Category
+                      </button>
+                      <ul
+                        data-type="region"
+                        role="listbox"
+                        aria-multiselectable="true"
+                        aria-hidden="true"
+                        aria-modal="true"
+                      >
+                        <li role="option">
+                          <div class="form-check">
+                            <label for="category11">Category</label>
+                            <input
+                              type="checkbox"
+                              id="category11"
+                              name="category11"
+                              value="category1"
+                            />
+                          </div>
+                        </li>
+                        
+                            <li role="option">
+                              <div class="form-check">
+                                <label for="subcategory21">Category</label>
+                                <input
+                                  type="checkbox"
+                                  id="subcategory21"
+                                  name="subcategory21"
+                                  value="subcategory2"
+                                />
+                              </div>
+                            </li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </div>
+                    
+                    <span class="active-filter">Active Filters:</span>
+                    <div class="selected-chips"></div>
+                    <button class="clear-search-filter">Clear All</button>
+                  </div>
+                </div>
+                <!-- END FILTER -->
+
               </div>
             </div>
             <!-- END SIDEBAR FOR DESKTOP -->
@@ -213,6 +268,22 @@
                   <div id="content">
                     {{ content }}
                   </div>
+
+                  <!-- BEGIN TAGS AND CATEGORY CHIPS -->
+                  <div class="pt-3" >
+                  <hr/>
+                  <div>
+                    <h5> Tags</h5>
+                    {% include corporate/tag-chip.html %}
+                  </div>
+
+                  <div>
+                    <h5> Category</h5>
+                    {% include corporate/category-chip.html %}
+                  </div>
+                </div>
+                  <!-- END TAGS AND CATEGORY CHIPS -->
+
                 </div>
               </div>
             </div>
@@ -249,6 +320,9 @@
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@undp/design-system/docs/js/swiper.min.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@undp/design-system/docs/js/expand-search.min.js"></script>
 
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@undp/design-system/docs/js/filter-search-bar.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@undp/design-system/docs/js/multi-select.min.js"></script>
+
     <!-- <script src="{{ site.baseurl}}/public/js/indexload.js"></script> -->
     <script src="{{ site.baseurl}}/assets/lunr-min.js"></script>
     <script src="{{ site.baseurl}}/assets/lunr-feed.js"></script>
@@ -269,6 +343,8 @@
       swiper('.fluid-carousel', '.slide-content'); 
 
       expandSearch()
+      multiSelect()
+      toggleFilter()
     });
 
     $(document).ready(function() {
