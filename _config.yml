@@ -1,8 +1,18 @@
-exclude:
-  - README.md
-  - Tutorials/
 baseurl: "/toolkit-micro-site-template"
 plugins:
     - jekyll-seo-tag
-
+exclude:
+  - README.md
+  - Tutorials/
+  - vendor
+  - CNAME
+  - README.md
+  - node_modules
+  - .sass-cache
+  - Gemfile
+  - Gemfile.lock
+  - package.json
+  - package-lock.json
+  - packages
+  - bin
     
