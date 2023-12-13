@@ -270,18 +270,24 @@
                   </div>
 
                   <!-- BEGIN TAGS AND CATEGORY CHIPS -->
+                  {% if page.tags or page.categories %}
                   <div class="pt-3" >
                   <hr/>
                   <div>
+                    {% if page.tags %}
                     <h5> Tags</h5>
                     {% include corporate/tag-chip.html %}
+                    {% endif %}
                   </div>
 
                   <div>
+                    {% if page.categories %}
                     <h5> Category</h5>
                     {% include corporate/category-chip.html %}
+                    {% endif %}
                   </div>
                 </div>
+                {% endif %}
                   <!-- END TAGS AND CATEGORY CHIPS -->
 
                 </div>
