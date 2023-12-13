@@ -264,7 +264,12 @@
             <div class="cell large-9 small-12 generic-content">
               <div class="grid-x">
                 <div class="markdown-body">
-                  <div id="results" class="all-posts results"></div>
+
+                  <!-- START BREADCRUMBS NAV -->
+                  {% include corporate/breadcrumbs.html %}
+                  <!-- END BREADCRUMBS NAV -->
+
+                  <div id="results"></div>
                   <div id="content">
                     {{ content }}
                   </div>
@@ -363,7 +368,6 @@
           }
       });
   });
-
     </script>
   </body>
 </html>
