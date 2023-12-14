@@ -210,44 +210,9 @@
                 <!-- BEGGIN FILTERS -->
                 <div class="search-filter">
                   <div class="select-wrapper">
-                    <div class="multi-select" data-multi-select="">
-                      <button aria-label="Region" aria-expanded="false" data-id="filter1">
-                        Category
-                      </button>
-                      <ul
-                        data-type="region"
-                        role="listbox"
-                        aria-multiselectable="true"
-                        aria-hidden="true"
-                        aria-modal="true"
-                      >
-                        <li role="option">
-                          <div class="form-check">
-                            <label for="category11">Category</label>
-                            <input
-                              type="checkbox"
-                              id="category11"
-                              name="category11"
-                              value="category1"
-                            />
-                          </div>
-                        </li>
-                        
-                            <li role="option">
-                              <div class="form-check">
-                                <label for="subcategory21">Category</label>
-                                <input
-                                  type="checkbox"
-                                  id="subcategory21"
-                                  name="subcategory21"
-                                  value="subcategory2"
-                                />
-                              </div>
-                            </li>
-                          </ul>
-                        </li>
-                      </ul>
-                    </div>
+                    <div id="tag-div"></div>
+                    <div id="category-div"></div>
+                    
                     
                     <span class="active-filter">Active Filters:</span>
                     <div class="selected-chips"></div>
@@ -306,8 +271,6 @@
         <!-- BEGIN PAGE FOOTER -->
         {% include corporate/footer.html %}
       </div>      
-
-
 
 
     <script type="text/javascript">
