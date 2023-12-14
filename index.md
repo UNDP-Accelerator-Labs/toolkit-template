@@ -6,7 +6,7 @@ has_children: true
 # CONFIGURATION BELOW IS ONLY NEEDED IF YOU WANT TO USE TAGS AND CATEGORY IN THE TOOLKIT
 tags: [poverty, inequality, women empoverment]
 
-categories: [toolkit, Innovation commons]
+sdg: [No Poverty, Zero Hunger]
 
 ---
 
