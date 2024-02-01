@@ -1,4 +1,4 @@
-# UNDP Accelerator Labs Toolkit Micro-site
+# Toolkit Micro-site Temaplte
 
 Welcome to the UNDP Accelerator Labs Toolkit Micro-site project! This guide provides instructions on setting up and customizing your Toolkit site.
 
