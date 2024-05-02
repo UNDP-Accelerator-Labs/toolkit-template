@@ -1,6 +1,6 @@
-# Toolkit micro-site template
+# Global Innovation Toolkit template
 
-Welcome to the UNDP Accelerator Labs Toolkit Micro-site project! This guide provides instructions on setting up and customizing your Toolkit site.
+Welcome to the Global Innovation Toolkit project! This guide provides instructions on setting up and customizing your toolkit site.
 
 ## Table of Contents
 
@@ -15,7 +15,7 @@ Welcome to the UNDP Accelerator Labs Toolkit Micro-site project! This guide prov
 
 ## Introduction
 
-The Toolkit micro-site uses Jekyll, a static site generator. Follow the steps below to get started.
+The toolkit uses Jekyll, a static site generator. Follow the steps below to get started.
 
 ## Toolkit Webpage Sample
 See the [sample](https://undp-accelerator-labs.github.io/national_innovation_ecosystems_toolkit/) for an idea of the minimal configuration options available.
