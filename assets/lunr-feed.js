@@ -91,12 +91,34 @@ $(document).ready(function() {
     }
   });
   
+  function customSort(a, b) {
+    // Check if strings start with a number
+    let startsWithNumberA = /^\d+/.test(a);
+    let startsWithNumberB = /^\d+/.test(b);
+    
+    // If both start with numbers, sort by number
+    if (startsWithNumberA && startsWithNumberB) {
+        let numA = parseInt(a.match(/^\d+/)[0]);
+        let numB = parseInt(b.match(/^\d+/)[0]);
+        return numA - numB;
+    } else if (startsWithNumberA) {
+        // If only a starts with a number, it comes first
+        return -1;
+    } else if (startsWithNumberB) {
+        // If only b starts with a number, it comes first
+        return 1;
+    } else {
+        // Otherwise, sort alphabetically
+        return a.localeCompare(b);
+    }
+}
 
   //POPULATE TAGS AND SDG FILTER
 var tagsdiv = $('#tag-div');
 var sdgdiv = $('#sdg-div')
 
 if(tags.length > 0){
+    tags = tags.sort(customSort);
     let tg = `
     <div class="multi-select" data-multi-select="">
         <button aria-label="Region" aria-expanded="false" data-id="tag">
@@ -136,6 +158,7 @@ if(tags.length > 0){
 }
 
 if(sdg.length > 0){
+    sdg = sdg.sort(customSort);
     let tg = `
     <div class="multi-select" data-multi-select="">
         <button aria-label="Region" aria-expanded="false" data-id="sdg">
