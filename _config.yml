@@ -1,4 +1,4 @@
-baseurl: "/toolkit-micro-site-template"
+baseurl: "/toolkit-template"
 plugins:
     - jekyll-seo-tag
 gems:
