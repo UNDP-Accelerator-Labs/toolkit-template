@@ -5,6 +5,6 @@ _site
 .ruby-version
 .jekyll-cache
 .sass-cache
-_site
+_site/*
 Gemfile.lock
 node_modules
